@@ -19,7 +19,7 @@ Planned Improvements
 
 * EEPROM wear levelling
 * Waterproofing
-* Machined servo brakets
+* Machined servo bracket
 
 Screenshots
 -----------
