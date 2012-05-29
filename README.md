@@ -1,4 +1,4 @@
-LikeList
+DIY E-Shift
 ==========================================
 
 * Author:    Nabil Tewolde (<nabil.tewolde@gmail.com>)
@@ -25,6 +25,7 @@ Screenshots
 -----------
 
 ![Screen shot 1](/nabilt/diy_eshift/raw/master/eshift_bb.jpg)
+![Screen shot 1](/nabilt/diy_eshift/raw/master/eshift_schem.jpg)
 
 License
 -------
