@@ -1,10 +1,12 @@
 DIY E-Shift
 ==========================================
 
-* Author:    Nabil Tewolde (<nabil.tewolde@gmail.com>)
-* Version:   0.1
-* Website:   <http://www.nabiltewolde.com>
-* GitHub:    <https://github.com/nabilt/diy_eshift>
+* Author: [Nabil Tewolde](http://www.nabiltewolde.com)
+* Version: 0.1
+* Instructable: <http://instructable.com/>
+* Website: <http://nabilt.github.com/diy_eshift/>
+* GitHub: <https://github.com/nabilt/diy_eshift/>
+
 
 DIY E-Shift is a easy to build electronic derailleur built with open source tools. It has been tested with the RD-4500 Shimano Tiagra derailleur, but the general method should work with most Shimano parts. This project contains:
 
@@ -12,20 +14,7 @@ DIY E-Shift is a easy to build electronic derailleur built with open source tool
 * Electronic schematics with Fritzing diagram and bill of materials
 * CAD drawings for the servo mount
 
-Step by step instructions can be found on instructables.com soon.
-
-Planned Improvements
---------------------
-
-* EEPROM wear levelling
-* Waterproofing
-* Machined servo bracket
-
-Screenshots
------------
-
-![Screen shot 1](/nabilt/diy_eshift/raw/master/eshift_bb.jpg)
-![Screen shot 1](/nabilt/diy_eshift/raw/master/eshift_schem.jpg)
+Step by step instructions can be found on instructables.com and on the project page.
 
 License
 -------
