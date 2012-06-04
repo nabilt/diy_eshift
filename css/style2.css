@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+body {
+  padding:50px;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:300;
+}
+
+p {
+  color:#777;
+  margin:0 0 20px;
+}
+
+.hero-unit {
+    padding-bottom: 0px;
+}
+
+ul, ol, pre, dl {
+    margin:20px 40px 20px;
+    color:#777;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  font-size:28px;
+}
+
+h2 {
+  color:#393939;
+}
+
+h3, h4, h5, h6 {
+  color:#494949;
+}
+
+
+.hero-unit {
+    background-color: #fff;
+    text-align: center;
+}
+
+.downloads ul {
+  list-style:none;
+  height:40px;
+  
+  padding:0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #eee;
+  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  
+  border-radius:5px;
+  border:1px solid #d2d2d2;
+  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
+  width:270px;
+}
+
+.downloads li {
+  width:89px;
+  float:left;
+  border-right:1px solid #d2d2d2;
+  height:40px;
+}
+
+.downloads ul a {
+  line-height:1;
+  font-size:11px;
+  color:#999;
+  display:block;
+  text-align:center;
+  padding-top:6px;
+  height:40px;
+}
+
+
+.downloads ul li + li {
+  width:88px;
+  border-left:1px solid #fff;
+}
+
+.downloads ul li + li + li {
+  border-right:none;
+  width:89px;
+}
+
+.downloads ul a strong {
+  font-size:14px;
+  display:block;
+  color:#222;
+}
+
+section {
+    padding-top: 45px;
+}
+
+
+#shopping-list td:first-child {
+    width: 5%;
+}
+
+#shopping-list td:nth-child(2) {
+    width: 25%;
+}
+
+#shopping-list td:nth-child(3) {
+    width: 50%;
+}
+#shopping-list td:nth-child(4) {
+    width: 20%;
+}
+
+#screenshot-carousel
+{
+    width: 600px;
+    margin:0 auto;
+    float:none;
+}
+
+#screenshot-carousel img
+{
+    width: auto;
+    height: 400px;
+    margin:0 auto;
+    float:none;
+}

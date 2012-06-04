@@ -1,67 +1,482 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Diy eshift by nabilt</title>
+    <title>DIY E-Shift</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open source DIY electronic derailleur">
+    <meta name="author" content="Nabil Tewoled">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Diy eshift</h1>
-        <p>DIY electronic derailleur for Shimano parts</p>
-        <p class="view"><a href="https://github.com/nabilt/diy_eshift">View the Project on GitHub <small>nabilt/diy_eshift</small></a></p>
-        <ul>
-          <li><a href="https://github.com/nabilt/diy_eshift/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/nabilt/diy_eshift/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/nabilt/diy_eshift">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>DIY E-Shift</h1>
 
-<ul>
-<li>Author:    Nabil Tewolde (<a href="mailto:nabil.tewolde@gmail.com">nabil.tewolde@gmail.com</a>)</li>
-<li>Version:   0.1</li>
-<li>Website:   <a href="http://www.nabiltewolde.com">http://www.nabiltewolde.com</a>
-</li>
-<li>GitHub:    <a href="https://github.com/nabilt/diy_eshift">https://github.com/nabilt/diy_eshift</a>
-</li>
-</ul><p>DIY E-Shift is a easy to build electronic derailleur built with open source tools. It has been tested with the RD-4500 Shimano Tiagra derailleur, but the general method should work with most Shimano parts. This project contains:</p>
+  <body data-spy="scroll">
 
-<ul>
-<li>Arduino sketch</li>
-<li>Electronic schematics with Fritzing diagram and bill of materials</li>
-<li>CAD drawings for the servo mount</li>
-</ul><p>Step by step instructions can be found on instructables.com soon.</p>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">DIY E-Shift</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="#intro">Intro</a></li>
+              <li><a href="#improvements">Planned Improvements</a></li>
+              <li><a href="#screenshots">Screenshots</a></li>
+              <li><a href="#assembly-list">Assembly List</a></li>
+              <li><a href="#shopping-list">Shopping List</a></li>
+              <li><a href="#license">License</a></li>
 
-<h2>Planned Improvements</h2>
-
-<ul>
-<li>EEPROM wear levelling</li>
-<li>Waterproofing</li>
-<li>Machined servo bracket</li>
-</ul><h2>Screenshots</h2>
-
-<p><img src="/nabilt/diy_eshift/raw/master/eshift_bb.jpg" alt="Screen shot 1"><img src="/nabilt/diy_eshift/raw/master/eshift_schem.jpg" alt="Screen shot 1"></p>
-
-<h2>License</h2>
-
-<p>DIY E-Shift by Nabil Tewolde is licensed under the MIT license.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/nabilt">nabilt</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
+    <div class="container">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>DIY E-Shift</h1>
+        <p>DIY electronic derailleur for Shimano parts</p>
+	<div class="downloads">
+          <ul>
+            <li><a href="https://github.com/nabilt/diy_eshift/zipball/master">Download <strong>ZIP File</strong></a></li>
+            <li><a href="https://github.com/nabilt/diy_eshift/tarball/master">Download <strong>TAR Ball</strong></a></li>
+            <li><a href="https://github.com/nabilt/diy_eshift">View On <strong>GitHub</strong></a></li>
+          </ul>
+	</div>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+	<div class="span12">
+
+	  <section id="intro">
+	    <h2>Intro</h2>
+	    <ul>
+	      <li>Author: <a href="http://www.nabiltewolde.com">Nabil Tewolde</a></li>
+	      <li>Version: 0.1</li>
+	      <li>Instructable: <a href="#">http://instructable.com</a></li>
+	      <li>GitHub: <a href="https://github.com/nabilt/diy_eshift">https://github.com/nabilt/diy_eshift</a></li>
+
+	    </ul>
+	    <p>DIY E-Shift is a easy to build electronic derailleur built with open source tools. It has been tested with the RD-4500 Shimano Tiagra derailleur, but the general method should work with most Shimano parts. This project contains:</p>
+	  </section>
+
+	  <ul>
+	    <li>Arduino sketch</li>
+	    <li>Electronic schematics with Fritzing diagram and bill of materials</li>
+	    <li>CAD drawings for the servo mount</li>
+	  </ul><p>Step by step instructions can be found on instructables.com soon.</p>
+	  
+	  <section id="improvements">
+	    <h2>Planned Improvements</h2>
+	    
+	    <ul>
+	      <li>EEPROM wear levelling</li>
+	      <li>Waterproofing</li>
+	      <li>Machined servo bracket</li>
+	    </ul>
+	  </section>
+
+	  <section id="screenshots">
+	    <h2>Screenshots</h2>
+	    
+
+	    <div id="screenshot-carousel" class="carousel">
+	      <!-- Carousel items -->
+	      <div class="carousel-inner">
+		<div class="active item">
+		  <img src="http://github.com/nabilt/diy_eshift/raw/master/eshift_bb.jpg" alt="Screen shot 1">		  
+		  <div class="carousel-caption">
+                    <h4>First Thumbnail label</h4>
+                    <p>blablabla</p>
+                  </div>
+		</div>
+
+		<div class="item">
+		  <img src="http://github.com/nabilt/diy_eshift/raw/master/eshift_schem.jpg" alt="Screen shot 1">
+		  <div class="carousel-caption">
+                    <h4>Second Thumbnail label</h4>
+                    <p>blablabla</p>
+                  </div>
+		</div>
+
+	      </div>
+	      <!-- Carousel nav -->
+	      <a class="carousel-control left" href="#screenshot-carousel" data-slide="prev">&lsaquo;</a>
+	      <a class="carousel-control right" href="#screenshot-carousel" data-slide="next">&rsaquo;</a>
+	    </div>
+
+	  </section>
+	    
+	  <section id="assembly-list">
+	    <h2>Assembly List</h2>
+	    <table class="table table-striped">
+	      
+	      <thead>
+		<tr>
+		  <th>Label</th>
+		  <th>Part Type</th>
+		  <th>Properties</th>
+		</tr>
+	      </thead>
+	      <tbody>
+		<tr>
+		  <td>C1</td>
+		  <td>Ceramic Capacitor</td>
+		  <td class="props">package 100 mil [THT, multilayer]; capacitance 0.1nF; voltage 16V</td>
+		</tr>
+		<tr>
+		  <td>J1</td>
+		  <td>HiTEC HS-225MG Servo</td>
+		  <td class="props">4.8V/6.0V - 54/67 oz./in</td>
+		</tr>
+		<tr>
+		  <td>LED1</td>
+		  <td>Red LED - 3mm</td>
+		  <td class="props">package 3 mm [THT]; leg yes; color Red (633nm)</td>
+		</tr>
+		<tr>
+		  <td>Part1</td>
+		  <td>Arduino Pro Mini 3.3V</td>
+		  <td class="props">voltage 3.3V; analog pins 4; digital pins 14</td>
+		</tr>
+		<tr>
+		  <td>Q1</td>
+		  <td>NPN-Transistor</td>
+		  <td class="props">package TO92 [THT]; type NPN; part # BC639</td>
+		</tr>
+		<tr>
+		  <td>R1</td>
+		  <td>100 Ω Resistor</td>
+		  <td class="props">package THT; tolerance ±5%; bands 4; resistance 100Ω; pin spacing 400 mil</td>
+		</tr>
+		<tr>
+		  <td>R2</td>
+		  <td>1k Ω Resistor</td>
+		  <td class="props">package THT; tolerance ±5%; bands 4; resistance 1kΩ; pin spacing 400 mil</td>
+		</tr>
+		<tr>
+		  <td>R3</td>
+		  <td>Rotary Potentiometer (Small)</td>
+		  <td class="props">size Rotary - 9mm; track Linear; type Rotary Shaft Potentiometer; maximum resistance 100kΩ</td>
+		</tr>
+		<tr>
+		  <td>R4</td>
+		  <td>10k Ω Resistor</td>
+		  <td class="props">package THT; tolerance ±5%; bands 4; resistance 10kΩ; pin spacing 400 mil</td>
+		</tr>
+		<tr>
+		  <td>R5</td>
+		  <td>10k Ω Resistor</td>
+		  <td class="props">package THT; tolerance ±5%; bands 4; resistance 10kΩ; pin spacing 400 mil</td>
+		</tr>
+		<tr>
+		  <td>S1</td>
+		  <td>Pushbutton</td>
+		  <td class="props">package THT; switching circuit SPST;
+		    default state Normally Open; Part# Omron/B3F-4000</td>
+		</tr>
+		<tr>
+		  <td>S2</td>
+		  <td>Pushbutton</td>
+		  <td class="props">package THT; switching circuit SPST;
+		    default state Normally Open; Part# Omron/B3F-4000</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>LiPower - Boost Converter</td>
+		  <td class="props">3.7V input; 5V output</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>Lipo Battery</td>
+		  <td class="props">3.7V 6A </td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>Aluminium Sheet</td>
+		  <td class="props">6'' x 3''; .016'' thickness</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>Protoboard</td>
+		  <td class="props">3.2" x 2.0"; https://www.adafruit.com/products/571</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>3 Wire Ribbon Cable</td>
+		  <td class="props">Length of your bike</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>22 Gauge Solid Core Wire</td>
+		  <td class="props"></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>3 Pin Molex Connector</td>
+		  <td class="props"></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>2 Pin Molex Connector x2</td>
+		  <td class="props"></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>Small Screw</td>
+		  <td class="props">......</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>Large Screw</td>
+		  <td class="props">......</td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>2.1'' x 3.5'' x 1.25'' Project Box</td>
+		  <td class="props"></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>4 inches Velcro Tape</td>
+		  <td class="props"></td>
+		</tr>
+		<tr>
+		  <td></td>	
+		  <td>A few zip ties (just in case)</td>
+		  <td class="props"></td>
+		</tr>
+		<tr>
+		  <td></td>
+		  <td>Single pole changeover switch rated for 10V minimum</td>
+		  <td class="props"></td>
+		</tr>
+
+	      </tbody>
+	    </table>
+	  </section>
+
+	  <section id="shopping-list">
+	    <h2>Shopping List</h2>
+	    <table class="table table-striped">
+	      <thead>
+		<tr>
+		  <th>Amount</th>
+		  <th>Part Type</th>
+		  <th>Properties</th>
+		  <th>Sources</th>
+		</tr>
+	      </thead>
+	      <tbody>
+		<tr>
+		  <td >1</td>
+		  <td>HiTEC HS-225MG Servo</td>
+		  <td class="props">4.8V/6.0V - 54/67 oz./in</td>
+		  <td><a href="http://www.hitecrcd.com/products/analog/micro-mini/hs-225mg.html">HiTEC</a></td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>Ceramic Capacitor</td>
+		  <td class="props">package 100 mil [THT, multilayer]; capacitance 0.1nF; voltage 16V</td>
+		  <td>Local electronics shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>Red LED - 3mm</td>
+		  <td class="props">package 3 mm [THT]; leg yes; color Red (633nm)</td>
+		  <td>Local electronics shop</td>
+		</tr>
+		<tr>
+		  <td>2</td>
+		  <td>Pushbutton</td>
+		  <td class="props">package THT; switching circuit SPST;
+		    default state Normally Open; Part# Omron/B3F-4000</td>
+		  <td><a href="http://ca.mouser.com/ProductDetail/Omron/B3F-4000/?qs=B3tblJ0Nlt8c5sbFRctxww%3d%3d">Mouser</a></td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>100 Ω Resistor</td>
+		  <td class="props">package THT; tolerance ±5%; bands 4; resistance 100Ω; pin spacing 400 mil</td>
+		  <td>Local electronics shop</td>
+		</tr>
+		<tr>
+		  <td>2</td>
+		  <td>10k Ω Resistor</td>
+		  <td class="props">package THT; tolerance ±5%; bands 4; resistance 10kΩ; pin spacing 400 mil</td>
+		  <td>Local electronics shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>1k Ω Resistor</td>
+		  <td class="props">package THT; tolerance ±5%; bands 4; resistance 1kΩ; pin spacing 400 mil</td>
+		  <td>Local electronics shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>NPN-Transistor</td>
+		  <td class="props">package TO92 [THT]; type NPN; part # BC639</td>
+		  <td><a href="http://ca.mouser.com/ProductDetail/ON-Semiconductor/BC639G/?qs=vNc2DXHODiLivlZ4rKcKg0%252byzNyd2n2EhVFiRWh4cb4%3d">Mouser</a></td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>Rotary Potentiometer (Small)</td>
+		  <td class="props">size Rotary - 9mm; track Linear; type Rotary Shaft Potentiometer; maximum resistance 100kΩ</td>
+		  <td>Local electronics shop</td>
+		</tr><tr>
+		  <td>1</td>
+		  <td>Arduino Pro Mini 3.3V</td>
+		  <td class="props">voltage 3.3V; analog pins 4; digital pins 14</td>
+		  <td><a href="http://www.sparkfun.com/products/11113">Sparkfun</a></td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>LiPower - Boost Converter</td>
+		  <td class="props">3.7V input; 5V output</td>
+		  <td><a href="http://www.sparkfun.com/products/10255">Sparkfun</a></td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>Lipo Battery</td>
+		  <td class="props">3.7V 6A </td>
+		  <td><a href="http://www.sparkfun.com/products/8484">Sparkfun</a></td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>Aluminium Sheet</td>
+		  <td class="props">6'' x 3''; .016'' thickness</td>
+		  <td>Local hobby shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>Protoboard</td>
+		  <td class="props">3.2" x 2.0"; https://www.adafruit.com/products/571</td>
+		  <td>Local electronics shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>3 Wire Ribbon Cable</td>
+		  <td class="props">Length of your bike</td>
+		  <td>Local electronics shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>22 Gauge Solid Core Wire</td>
+		  <td class="props"></td>
+		  <td>Local electronics shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>3 Pin Molex Connector</td>
+		  <td class="props"></td>
+		  <td><a href="http://www.sparkfun.com/products/9919">Sparkfun</a></td>
+		</tr>
+		<tr>
+		  <td>3</td>
+		  <td>2 Pin Molex Connector x2</td>
+		  <td class="props"></td>
+		  <td>Local electronics shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>Small Screw</td>
+		  <td class="props">......</td>
+		  <td>Local hardware shop</td>
+		</tr>
+		<tr>
+		  <td>2</td>
+		  <td>Large Screw</td>
+		  <td class="props">......</td>
+		  <td>Local hardware shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>2.1'' x 3.5'' x 1.25'' Project Box</td>
+		  <td class="props"></td>
+		  <td>Local hobby shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>4 inches Velcro Tape</td>
+		  <td class="props"></td>
+		  <td>Local craft shop</td>
+		</tr>
+		<tr>
+		  <td>3</td>	
+		  <td>A few zip ties (just in case)</td>
+		  <td class="props"></td>
+		  <td>Local hardware shop</td>
+		</tr>
+		<tr>
+		  <td>1</td>
+		  <td>Single pole changeover switch rated for 10V minimum</td>
+		  <td class="props"></td>
+		  <td>Local electronic shop</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </section>
+
+	  <section id="license">
+	    <h2>License</h2>
+	    <p>DIY E-Shift by Nabil Tewolde is licensed under the MIT license.</p>
+	  </section>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+	 ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/app.js"></script>
     
   </body>
 </html>
