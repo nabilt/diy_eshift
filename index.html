@@ -1,12 +1,16 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/">
   <head>
     <meta charset="utf-8">
     <title>DIY E-Shift</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Open source DIY electronic derailleur">
     <meta name="author" content="Nabil Tewolde">
+
+    <meta itemprop="name" content="DIY Electronic Derailleur">
+    <meta itemprop="description" content="Open source DIY electronic derailleur">
+    <meta itemprop="image" content="http://github.com/nabilt/diy_eshift/raw/gh-pages/img/servo_mounted_final.jpg">
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -30,6 +34,20 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32423246-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
   </head>
 
   <body data-spy="scroll">
@@ -51,9 +69,23 @@
               <li><a href="#assembly-list">Assembly List</a></li>
               <li><a href="#shopping-list">Shopping List</a></li>
               <li><a href="#license">License</a></li>
-
             </ul>
-          </div><!--/.nav-collapse -->
+
+	    <ul class="nav pull-right" data-target=".nav-collapse">
+	      <li class="social-button"><g:plusone size="medium" href="http://nabilt.github.com/diy_eshift/"></g:plusone></li>
+	      <li class="">
+                <a href="https://twitter.com/share"
+                class="twitter-share-button"
+                data-url="http://nabilt.github.com/diy_eshift/"
+                data-text="Checkout this open source electronic
+                derailleur" data-via="nabilt" data-dnt="true">Tweet</a>
+	      </li>
+	      <li class="social-button">
+		<div class="fb-like" data-href="http://nabilt.github.com/diy_eshift/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+	      </li>
+	    </ul>
+
+         </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
@@ -74,7 +106,7 @@
 	   href="http://www.instructables.com/id/DIY-Electronic-Derailleur/">
 	  <i class="icon-thumbs-up icon-white"></i> Vote on
 	  Instructables </a>
-     </div>
+      </div>
 
       <!-- Example row of columns -->
       <div class="row">
@@ -115,6 +147,7 @@
 	    <div id="screenshot-carousel" class="carousel">
 	      <!-- Carousel items -->
 	      <div class="carousel-inner">
+		
 		<div class="active item">
 		  <img src="http://github.com/nabilt/diy_eshift/raw/master/eshift_bb.jpg" alt="Fritzing diagram">		  
 		  <div class="carousel-caption">
@@ -122,7 +155,7 @@
                     <p></p>
                   </div>
 		</div>
-
+		
 		<div class="item">
 		  <img src="http://github.com/nabilt/diy_eshift/raw/master/eshift_schem.jpg"
 		       alt="Shifter schematic">
@@ -130,31 +163,32 @@
                     <h4>Schematic</h4>
                     <p></p>
                   </div>
-
+		</div>
+		
 		<div class="item">
 		  <img src="http://github.com/nabilt/diy_eshift/raw/gh-pages/img/servo_mounted_final.jpg" alt="Servo mounted on a Shimano Tiagra derailleur">
 		  <div class="carousel-caption">
                     <h4>Servo mounted on a Shimano Tiagra derailleur</h4>
                     <p></p>
                   </div>
-
-
+		</div>
+		
 		<div class="item">
 		  <img src="http://github.com/nabilt/diy_eshift/raw/gh-pages/img/button_mounted.jpg" alt="Electronic shifters">
 		  <div class="carousel-caption">
                     <h4>Electronic shifters</h4>
                     <p></p>
                   </div>
-
+		</div>
+		
 		<div class="item">
 		  <img src="http://github.com/nabilt/diy_eshift/raw/gh-pages/img/elec_final.jpg" alt="Screen shot 1">
 		  <div class="carousel-caption">
                     <h4>Mounted Electronics</h4>
                     <p></p>
                   </div>
-
 		</div>
-
+		
 	      </div>
 	      <!-- Carousel nav -->
 	      <a class="carousel-control left" href="#screenshot-carousel" data-slide="prev">&lsaquo;</a>
@@ -162,7 +196,7 @@
 	    </div>
 
 	  </section>
-	    
+	  
 	  <section id="assembly-list">
 	    <h2>Assembly List</h2>
 	    <table class="table table-striped">
@@ -506,5 +540,24 @@
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/app.js"></script>
     
+    <script type="text/javascript">
+      (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>    
+
   </body>
 </html>
