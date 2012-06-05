@@ -3,8 +3,8 @@ DIY E-Shift
 
 * Author: [Nabil Tewolde](http://www.nabiltewolde.com)
 * Version: 0.1
-* Instructable: <http://instructable.com/>
-* Website: <http://nabilt.github.com/diy_eshift/>
+* Instructable: <http://www.instructables.com/id/DIY-Electronic-Derailleur/>
+* Project Page: <http://nabilt.github.com/diy_eshift/>
 * GitHub: <https://github.com/nabilt/diy_eshift/>
 
 
@@ -13,8 +13,6 @@ DIY E-Shift is a easy to build electronic derailleur built with open source tool
 * Arduino sketch
 * Electronic schematics with Fritzing diagram and bill of materials
 * CAD drawings for the servo mount
-
-Step by step instructions can be found on instructables.com and on the project page.
 
 License
 -------
